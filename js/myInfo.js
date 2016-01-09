@@ -1,3 +1,10 @@
+$(function () {
+	var buttons, length, i, previousContent, currentContent, clickedButton;
+	buttons = $("ul li");
+	length = buttons.length;
+	clickedButton = $(buttons[0]);
+	clickedButton.attr("class", "clicked");
+
 $(function () { // event when onload function
 	buttonReaction();
 });
@@ -7,33 +14,22 @@ $(window).resize(function() { // event when window resized
 })
 
 function buttonReaction() {
-		var buttons, length, i, previousContent, currentContent, clickedButton;
-		buttons = $("ul li");
-		length = buttons.length;
-		if($("#content").css("display") === "block") {
 
-		clickedButton = $(buttons[0]);
-		clickedButton.attr("class", "clicked");
+	if($("#content").css("display") === "block") {
+
 		for(i=0; i<length; i++) {
 			$(buttons[i]).click(function(){
-			
-			clickedButton.attr("class", "unclicked");
-			//previousContent = "#content" + clickedButton.eq(0).html();
-			previousContent = "#content" + clickedButton.find("p").first().html();
-			$(previousContent).attr("class", "hide");
-
-			$(this).attr("class", "clicked"); // заливаем кнопку на которую нажали
-			currentContent = "#content" + $(this).find("p").first().html();
-			$(currentContent).attr("class", "show");
-			//$("content" + $(this).html()).attr("class", "show");
-			clickedButton = $(this);
-			// меняем стиль дива с соотв айди
-			// все остальные объекты перекрашиваем в нормальный, меняем класс на невидимый
-			// полезно написать так, чтобы отслеживать объект и изменять лишь его класс и цвет
-
+				clickedButton.attr("class", "unclicked");
+				previousContent = "#content" + clickedButton.find("p").first().html();
+				$(previousContent).attr("class", "hide");
+				$(this).attr("class", "clicked");
+				currentContent = "#content" + $(this).find("p").first().html();
+				$(currentContent).attr("class", "show");
+				clickedButton = $(this);
         	});
 		}
 	} else {
 		console.log("bobik!");
 	}
 }
+});
