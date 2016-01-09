@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Заметки туриста V5 </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="ru" />
+    <link rel="shortcut icon" href="/JS prodj/Raphael/img/palm.png" type="img/png">
+    <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/myStyle.css" type="text/css" />
+
+</head>
+<script src="js/jquery.min.js">
+</script>
+<script src="js/paths.js"></script>
+<script src="js/raphael.js"></script>
+
+<body>
+
+    <img src="img/header.png" alt="header" width="100%">
+    <div id="menu"> <img src="img/content/icons/menu.png" alt="menu"> </div>
+    <nav class="cf">
+        <div id="delete">
+            <img src="img/content/icons/closeSquare.png" alt="delete">
+        </div>
+        <ul class="menu">
+            <li><a class="current" href="#" title="Homepage"> Домашняя </a>
+            </li>
+            <li><a href="#" title="About tours"> О турах </a>
+                <ul class="submenu">
+                    <li><a href="austria.html" title="Austria">Австрия</a>
+                    </li>
+                    <li><a href="albania.html" title="Albania">Албания</a>
+                    </li>
+                    <li><a href="belarus.html" title="Belarus">Белоруссия</a>
+                    </li>
+                    <li><a href="belgium.html" title="Belgium">Бельгия</a>
+                    </li>
+                    <li><a href="bulgaria.html" title="Bulgaria">Болгария</a>
+                    </li>
+                    <li><a href="bosniaherzegovina.html" title="BosniaHerzegovina">Босния и Герцеговина</a>
+                    </li>
+
+                    <li><a href="gb.html" title="Great Britain">Великобритания</a>
+                    </li>
+                    <li><a href="hungary.html" title="Hungary">Венгрия</a>
+                    </li>
+                    <li><a href="turkey.html" title="Turkey">Восточная Фракия(Турция)</a>
+                    </li>
+                    <li><a href="germany.html" title="Germany">Германия</a>
+                    </li>
+                    <li><a href="greece.html" title="Greece">Греция</a>
+                    </li>
+                    <li><a href="denmark.html" title="Denmark">Дания</a>
+                    </li>
+
+                    <li><a href="ireland.html" title="Ireland">Ирландия</a>
+                    </li>
+                    <li><a href="iceland.html" title="Iceland">Исландия</a>
+                    </li>
+                    <li><a href="spain.html" title="Spain">Испания</a>
+                    </li>
+                    <li><a href="italy.html" title="Italy">Италия</a>
+                    </li>
+                    <li><a href="latvia.html" title="Latvia">Латвия</a>
+                    </li>
+                    <li><a href="lithuania.html" title="Lithuania">Литва</a>
+                    </li>
+
+                    <li><a href="luxembourg.html" title="Luxembourg">Люксембург</a>
+                    </li>
+                    <li><a href="macedonia.html" title="Macedonia">Македония</a>
+                    </li>
+                    <li><a href="moldova.html" title="Moldova">Молдавия</a>
+                    </li>
+                    <li><a href="netherlands.html" title="Netherlands">Нидерланды</a>
+                    </li>
+                    <li><a href="norway.html" title="Norway">Норвегия</a>
+                    </li>
+                    <li><a href="poland.html" title="Poland">Польша</a>
+                    </li>
+
+                    <li><a href="portugal.html" title="Portugal">Португалия</a>
+                    </li>
+                    <li><a href="romania.html" title="Romania">Румыния</a>
+                    </li>
+                    <li><a href="serbia.html" title="Serbia">Сербия</a>
+                    </li>
+                    <li><a href="slovenia.html" title="Slovenia">Словения</a>
+                    </li>
+                    <li><a href="ukraine.html" title="Ukraine">Украина</a>
+                    </li>
+                    <li><a href="finland.html" title="Finland">Финляндия</a>
+                    </li>
+
+                    <li><a href="EuropeFrance.html" title="France">Франция</a>
+                    </li>
+                    <li><a href="croatia.html" title="Croatia">Хорватия</a>
+                    </li>
+                    <li><a href="czech.html" title="Czech">Чехословакия</a>
+                    </li>
+                    <li><a href="switzerland.html" title="Switzerland">Швейцария</a>
+                    </li>
+                    <li><a href="sweden.html" title="Sweden">Швеция</a>
+                    </li>
+                    <li><a href="estonia.html" title="Estonia">Эстония</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li><a href="#" title="About us"> О нас </a>
+            </li>
+            <li><a href="articles.html" title="Articles"> Статьи </a>
+            </li>
+            <li><a href="resources.html" title="Resources"> Ресурсы </a>
+            </li>
+        </ul>
+    </nav>
+    <p id="welcomNote"> Наш путеводитель покажет Вам достопримечательности Европы: </p>
+
+    <section id="main">
+        <div id="col1">
+            <div id="mapArea"> </div>
+        </div>
+        <div id="col2">
+            <div id="container">
+                <div id="picContainer">
+                    <img class="picForRoll" src="img/front/amsterdam.jpg" alt="Амстердам" width="100%" style="display: block;">
+                    <img class="picForRoll" src="img/front/dover.jpg" alt="Дувр" width="100%">
+                    <img class="picForRoll" src="img/front/helsinki.jpg" alt="Хельсинки" width="100%">
+                    <img class="picForRoll" src="img/front/kopenhagen.jpg" alt="Копенгаген" width="100%">
+                    <img class="picForRoll" src="img/front/nord-ostsee-kanal.jpg" alt="Кильский канал" width="100%">
+                    <img class="picForRoll" src="img/front/stockholm.jpg" alt="Стокгольм" width="100%">
+                    <img class="picForRoll" src="img/front/tallinn.jpg" alt="Таллин" width="100%">
+                    <img class="picForRoll" src="img/front/tower-bridge.jpg" alt="Разводной мост" width="100%">
+                    <img class="picForRoll" src="img/front/visby.jpg" alt="Висбю" width="100%">
+                    <img id="arrowLeft" src="img/content/icons/arrowLeft.png" alt="Left" width="100%">
+                    <img id="arrowRight" src="img/content/icons/arrowRight.png" alt="Right" width="100%">
+                </div>
+
+                <div id="pContainer">
+
+                    <p class="pForRoll" style="display: block;">Амстердам, столица и крупнейший город <a href="#" title="Netherlands">Нидерландов</a>, является одним из самых популярных туристических центров Европы, ежегодно его посещают более 4,63 миллионов гостей из других стран (по данным 2009 года).</p>
+
+                    <p class="pForRoll">Дувр - город и порт в <a href="#" title="Great Britain">Великобритании</a>, в английском графстве Кент. Из достопримечательностей стоит отметить Дуврский замок, один из крупнейших по площади в Великобритании и имевший долгое время крайне важное стратегическое положение. Также туристическим объектом можно считать Белые скалы Дувра (фото).</p>
+
+                    <p class="pForRoll">Хельсинки - столица и крупнейший город <a href="#" title="Finland"> Финляндии</a>, является центром бизнеса, образования, культуры и науки. В 2014 году в рейтинге 25 лучших городов мира, составленном британским журналом Monocle, Хельсинки занял пятое место (на первом месте — Копенгаген)</p>
+
+                    <p class="pForRoll">Копенгаген - столица и самый крупный город <a href="#" title="Denmark"> Дании</a>. В 2013 году Копенгаген занял первое место в рейтинге наиболее подходящих для проживания городов мира, составленном британским журналом Monocle </p>
+
+                    <p class="pForRoll">Кильский канал - канал в <a href="#" title="Nord-ostsee-kanal"> Германии</a>,соединяющий Балтийское и Северное моря. Кильский канал был введён в эксплуатацию 20 июня 1895 года, строительство продолжалось 8 лет. Является одним из самых загруженных судоходных путей Европы.</p>
+
+                    <p class="pForRoll">Стокгольм — столица и крупнейший город <a href="#" title="Sweden"> Швеции </a>. Расположен на протоках, соединяющих озеро Меларен с Балтийским морем.,соединяющий Балтийское и Северное моря; известен своей богатой культурой. Здесь жили и работали знаменитые люди, основывались разнообразные культурные учреждения. В 1998 Стокгольм был избран Европейской столицей культуры.</p>
+
+                    <p class="pForRoll"> Таллин — самый крупный город и столица <a href="#" title="Estonia"> Эстонии </a>. Таллин — политический, научный, экономический и культурный центр Эстонии. В городе находятся все ветви власти республики, также сосредоточено много средних профессиональных и высших учебных заведений. Развитию туризма способствует постоянно развивающаяся сеть гостиниц.</p>
+
+                    <p class="pForRoll"> Тауэрский мост — разводной мост в центре Лондона над рекой Темзой, недалеко от Лондонского Тауэра. Также является одним из символов Лондона и <a href="#" title="Great Britain"> Британии </a>. Строительные работы начались 21 июня 1886 года и продолжались в течение 8 лет.30 июня 1894 года мост был торжественно открыт Принцем Уэльским Эдуардом и его супругой принцессой Александрой. </p>
+
+                    <p class="pForRoll"> Висбю — главный город острова Готланд, <a href="#" title="Sweden"> Швеция </a>; административный центр лена Готланд. Наиболее сохранившийся в Скандинавии средневековый город, туристический центр, памятник Всемирного наследия. В городе сохранились средневековые церкви и не имеющая аналогов в Северной Европе по степени сохранности городская стена длиной 3,4 км с 44 башнями XII—XIV веков (фото).</p>
+
+                </div>
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+    </section>
+
+    <a id="footer" href="Form.html" title="Contact us!"> <footer> Связаться с нами!..</footer> </a>
+
+<script src="js/myScript.js"></script>
+</body>
+</html>

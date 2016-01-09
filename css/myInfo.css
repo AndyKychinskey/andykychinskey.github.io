@@ -1,273 +1,278 @@
 	.cf:before,
 	.cf:after {
-	    content:"";
+	    content: "";
 	    display: table;
 	}
 	.cf:after {
-	    clear:both;
+	    clear: both;
 	}
 	/* For IE 6/7 (trigger hasLayout) */
+	
 	.cf {
-	    zoom:1;
+	    zoom: 1;
 	}
-html, body, header, article, div, footer {
-	margin: 0;
-	padding: 0;
-}
-body {
-	background: #ECEBFF;
-	width: 90%;
-	margin: 0 0 0 2%;
-}
-header {
-	width: 100%;
-	position: relative;
-	background: #FFFAFA;
-	border-bottom-right-radius: 4px;
-	border-bottom-left-radius: 4px;
-}
-header img {
-	float: left;
-	padding-top: 10px;
-	padding-left: 12%;
-	width: 64px;
-	height: 64px;
-}
-header p {
-	width: 69.5%;
-	text-align: center;
-	font-family: 'Lobster', cursive;
-	font-size: 24px;
-	text-transform: capitalize;
-	padding: 22px 0 26px 0;
-	margin: 0 0 0 30.5%;
-	/*border: 2px solid #EAC860; */
-	background: #FFCD4D;
-	border-bottom-right-radius: 4px;
-}
-section {
-	width: 100%;
-	padding: 5px;
-}
-#sectionOne {
-	/*clear: left;*/              /*dsfffffffffffffffffffffffffffffffffffffffff*/
-}
-#sectionOne article {
-	text-align: justify;
-	padding-right: 5.5px;
-}
-#forImg {
-	position: relative;
-	float: left;
-	width: 30%;
-	margin-right: 10px;
-}
-#forImg img {
-	position: relative;
-	width: 100%;
-	border-radius: 4px;
-
-}
-#sectionTwo {
-	clear: both;
-	width: 100%;
-}
-ul {
-	position: relative;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-ul  > li {
- position: relative;
- list-style-type: none;
- display: block;
- width: 24.99%;
- height: 40px;
- float: left;
- text-align: center;
- font-family: 'Lobster', cursive;
- padding-top: 0px;
- padding-bottom: 50px;
- font-size: 14pt;
-
- /* Эта штука помогает кнопкам находитится в одном ряду */
-
- -webkit-box-sizing: border-box;
- -moz-box-sizing: border-box; /* Fixes Firefox bug */
-  box-sizing: border-box;
-}
-
-ul li:hover {
-  cursor: pointer;
-  border-left: 2px solid #ECEBFF;
-  border-bottom: 2px solid #ECEBFF;
-}
-
-li.clicked:hover {
-  cursor: default;
-  border-left: none;
-  border-bottom: none;
-}
-
-.clicked {
-  background: #EABC47;
-  border-bottom: none;
-}
-
-.unclicked {
-  background: #FFCD4D;
-  border-left: 2px solid #EAC860;
-  border-bottom: 2px solid #EAC860;
-}
-
-#content {
-  width: 100%;
-  height: 200px;
-  background: #FFFAFA;
-  visibility: visible;
- /* border: 2px solid #EAC860;*/
-}
-li div {
- display: none;
-}
-li img {
- float: left;
- display: block;
- width: 40px;
- margin-left: 10%;
- margin-top: 2%;
-}
-.show {
-  display: block;
-}
-.hide {
-  display: none;
-}
-#content p {
-  padding: 20px 10px 4px 10px;
-  text-align: justify;
-}
-#sectionOne article::first-letter {
-	font-family: 'Lobster', cursive;
-	font-size: 18pt;
-	padding: 1px 2px 1px 5px;
-	font-weight: bold;
-	background: #dcdcdc;
-}
-footer {
-  width: 100%;
-  background: #C19B3A;
-  text-align: right;
-  font-size: 14px;
-  padding: 15px 20px 5px 0;
-  border: 2px solid #EAC860;
-}
-@media screen and (min-width: 769px) and (max-width: 950px){
+	html,
+	body,
+	header,
+	article,
+	div,
+	footer {
+	    margin: 0;
+	    padding: 0;
+	}
 	body {
-		width: 98%;
-		padding: 0;
-		margin: 0;
-		margin-right: 10px;
-		padding-right: 10px;
-		}
-
-}
-@media screen and (min-width: 481px) and (max-width: 768px){
-	body {
-		width: 98%;
-		padding: 0;
-		margin: 0;
-		margin-right: 10px;
-		padding-right: 10px;
-		}
+	    background: #ECEBFF;
+	    width: 90%;
+	    margin: 0 0 0 2%;
+	}
+	header {
+	    width: 100%;
+	    position: relative;
+	    background: #9DA2AD;
+	    border-bottom-right-radius: 4px;
+	    border-bottom-left-radius: 4px;
+	}
+	header img {
+	    float: left;
+	    padding-top: 10px;
+	    padding-left: 12%;
+	    width: 64px;
+	    height: 64px;
+	}
 	header p {
-	font-size: 22px;
-}
-	#content {
-		height: 300px;
+	    width: 69.5%;
+	    background: #757D8F;
+	    text-align: center;
+	    font-family: 'Lobster', cursive;
+	    font-size: 24px;
+	    text-transform: capitalize;
+	    padding: 22px 0 26px 0;
+	    margin: 0 0 0 30.5%;
+	    /*border: 2px solid #EAC860; */
+	    
+	    border-bottom-right-radius: 4px;
 	}
-
+	section {
+	    width: 100%;
+	    padding: 5px;
+	}
+	#sectionOne {
+	    /*clear: left;*/
+	    /*dsfffffffffffffffffffffffffffffffffffffffff*/
+	}
+	#sectionOne article {
+	    text-align: justify;
+	    padding-right: 5.5px;
+	}
+	#forImg {
+	    position: relative;
+	    float: left;
+	    width: 30%;
+	    margin-right: 10px;
+	}
+	#forImg img {
+	    position: relative;
+	    width: 100%;
+	    border-radius: 4px;
+	}
+	#sectionTwo {
+	    clear: both;
+	    width: 100%;
+	}
+	ul {
+	    position: relative;
+	    width: 100%;
+	    margin: 0;
+	    padding: 0;
+	}
+	ul > li {
+	    position: relative;
+	    list-style-type: none;
+	    display: block;
+	    width: 24.99%;
+	    height: 40px;
+	    float: left;
+	    text-align: center;
+	    font-family: 'Lobster', cursive;
+	    padding-top: 0px;
+	    padding-bottom: 50px;
+	    font-size: 14pt;
+	    /* Эта штука помогает кнопкам находитится в одном ряду */
+	    
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    /* Fixes Firefox bug */
+	    
+	    box-sizing: border-box;
+	}
+	ul li:hover {
+	    cursor: pointer;
+	    border-left: 2px solid #9DA2AD;
+	    border-bottom: 2px solid #9DA2AD;
+	}
+	ol li {
+	    list-style-type: none;
+	}
+	li.clicked:hover {
+	    cursor: default;
+	    border-left: none;
+	    border-bottom: none;
+	}
+	.clicked {
+	    background: #9DA2AD;
+	    border-bottom: none;
+	}
+	.unclicked {
+	    background: #757D8F;
+	    border-left: 2px solid #FFFFFF;
+	    border-bottom: 2px solid #FFFFFF;
+	}
+	#content {
+	    width: 100%;
+	    height: 180px;
+	    background: #FFFAFA;
+	    visibility: visible;
+	    /* border: 2px solid #EAC860;*/
+	}
+	li div {
+	    display: none;
+	}
+	li img {
+	    float: left;
+	    display: block;
+	    width: 40px;
+	    margin-left: 10%;
+	    margin-top: 2%;
+	}
+	.show {
+	    display: block;
+	}
+	.hide {
+	    display: none;
+	}
+	#content p {
+	    padding: 20px 10px 4px 10px;
+	    text-align: justify;
+	}
+	#sectionOne article::first-letter {
+	    font-family: 'Lobster', cursive;
+	    font-size: 18pt;
+	    padding: 1px 2px 1px 5px;
+	    font-weight: bold;
+	    background: #dcdcdc;
+	}
+	footer {
+	    width: 100%;
+	    background: #3F4A61;
+	    text-align: right;
+	    font-size: 14px;
+	    /* padding: 15px 20px 5px 0;*/
+	    
+	    padding-right: 5px;
+	    border: 2px solid #9DA2AD;
+	}
+	@media screen and (min-width: 769px) and (max-width: 950px) {
+	    body {
+	        width: 98%;
+	        padding: 0;
+	        margin: 0;
+	        margin-right: 10px;
+	        padding-right: 10px;
+	    }
+	}
+	@media screen and (min-width: 481px) and (max-width: 768px) {
+	    body {
+	        width: 98%;
+	        padding: 0;
+	        margin: 0;
+	        margin-right: 10px;
+	        padding-right: 10px;
+	    }
+	    header p {
+	        font-size: 22px;
+	    }
+	    #content {
+	        height: 180px;
+	    }
+	    /*
 	li {
 		background: #FFCD4D;
 	}
-
-	li img {
-		display: none;
+*/
+	    
+	    li img {
+	        display: none;
+	    }
+	    li > p::first-letter {
+	        font-family: 'Lobster', cursive;
+	        font-size: 18pt;
+	        padding: 1px 2px 1px 5px;
+	        font-weight: bold;
+	        background: #FFFAFA;
+	    }
 	}
-
-	li > p::first-letter {
-	font-family: 'Lobster', cursive;
-	font-size: 18pt;
-	padding: 1px 2px 1px 5px;
-	font-weight: bold;
-	background:  #FFFAFA;
-}
-}
-
-@media screen and (max-width: 480px){
-		body {
-		width: 98%;
-		padding: 0;
-		margin: 0;
-		margin-right: 10px;
-		padding-right: 10px;
-		}
-	 ul  > li {
-	 width: 100%;
-	 height: 30px;
-	 float: none;
-	 text-align: center;
-	 font-size: 13pt;
-
-	 /* Эта штука помогает кнопкам находитится в одном ряду */
-
-	 -webkit-box-sizing: border-box;
-	 -moz-box-sizing: border-box; /* Fixes Firefox bug */
-	  box-sizing: border-box;
-}
-
-	li > p, #content, li img {
-		display: none;
-	}
-	li div {
-		display: block;
-	}
-	#content {
-		height: 385px;
-		border: none;
-	}
-	#sectionOne article {
-		font-size: 12pt;
-}
-
-li.clicked:hover {
-  cursor: default;
-  border-bottom: 2px solid #EAC860;
-  border-left: none;
-}
-
-.clicked {
-  background: #EABC47;
-  border-bottom: 2px solid #EAC860;
-  border-left: none;
-}
-
-.unclicked {
-  background: #FFCD4D;
-  border-bottom: 2px solid #EAC860;
-  border-left: none;
-}
-li label {
-	/*font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;*/
-	font-family: 'Lobster', cursive;
-	padding: 5px 20px;
-	position: relative;
-	display: block;
-	height: 30px;
-	font-size: 19px;
-	/*text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+	@media screen and (max-width: 480px) {
+	    body {
+	        width: 98%;
+	        padding: 0;
+	        margin: 0;
+	        margin-right: 10px;
+	        padding-right: 10px;
+	    }
+	    ul > li {
+	        width: 100%;
+	        height: 30px;
+	        float: none;
+	        text-align: center;
+	        font-size: 13pt;
+	        /* Эта штука помогает кнопкам находитится в одном ряду */
+	        
+	        -webkit-box-sizing: border-box;
+	        -moz-box-sizing: border-box;
+	        /* Fixes Firefox bug */
+	        
+	        box-sizing: border-box;
+	    }
+	    li > p,
+	    #content,
+	    li img {
+	        display: none;
+	    }
+	    li div {
+	        display: block;
+	    }
+	    #content {
+	        height: 385px;
+	        border: none;
+	    }
+	    #sectionOne article {
+	        font-size: 12pt;
+	    }
+	    li.clicked:hover {
+	        cursor: default;
+	        border-bottom: 2px solid #9DA2AD;
+	        border-left: none;
+	    }
+	    .clicked {
+	        background: #9DA2AD;
+	        border-bottom: 2px solid #9DA2AD;
+	        border-left: none;
+	    }
+	    .unclicked {
+	        background: #757D8F;
+	        border-bottom: 2px solid #9DA2AD;
+	        border-left: none;
+	    }
+	    li label {
+	        /*font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;*/
+	        
+	        font-family: 'Lobster', cursive;
+	        padding: 5px 20px;
+	        position: relative;
+	        display: block;
+	        height: 30px;
+	        font-size: 19px;
+	        /*text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
 	line-height: 33px;
 	background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
 	box-shadow: 
@@ -275,55 +280,45 @@ li label {
 		1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
 		0px 2px 2px rgba(0,0,0,0.1);
 	*/
-}
-
-li label:hover {
-	cursor: pointer;
-}
-
-
- #sectionTwo div input:checked + label,
- #sectionTwo div input:checked + label:hover{
-	background: #C19B3A;
-}
-
-/* Дабы не отражались значки выбора */
-#sectionTwo div input{
-	display: none;
-}
-
-#sectionTwo div article{
-	background: #EABC47;
-	margin-top: 0;
-	overflow: hidden;
-	height: 0px;
-	width: 100%;
-	position: relative;
-	z-index: 10;
-	transition: 
-		height 0.3s ease-in-out, 
-}
-
-#sectionTwo div input:checked ~ article{
-	transition: 
-		height 0.5s ease-in-out, 
-}
-
-#sectionTwo div input:checked ~ article.ac-small{
-	height: 140px;
-}
-#sectionTwo div input:checked ~ article.ac-medium{
-	height: 140px;
-}
-#sectionTwo div input:checked ~ article.ac-large{
-	height: 230px;
-}
-
-
-	header img {
-	padding-top: 17px;
-	padding-left: 9%;
-	width: 60px;
-	height: 60px;
+	    }
+	    li label:hover {
+	        cursor: pointer;
+	    }
+	    #sectionTwo div input:checked + label,
+	    #sectionTwo div input:checked + label:hover {
+	        background: #757D8F;
+	    }
+	    /* Дабы не отражались значки выбора */
+	    
+	    #sectionTwo div input {
+	        display: none;
+	    }
+	    #sectionTwo div article {
+	        background: #9DA2AD;
+	        margin-top: 0;
+	        overflow: hidden;
+	        height: 0px;
+	        width: 100%;
+	        position: relative;
+	        z-index: 10;
+	        transition: height 0.3s ease-in-out,
+	    }
+	    #sectionTwo div input:checked ~ article {
+	        transition: height 0.5s ease-in-out,
+	    }
+	    #sectionTwo div input:checked ~ article.ac-small {
+	        height: 155px;
+	    }
+	    #sectionTwo div input:checked ~ article.ac-medium {
+	        height: 210px;
+	    }
+	    #sectionTwo div input:checked ~ article.ac-large {
+	        height: 230px;
+	    }
+	    header img {
+	        padding-top: 17px;
+	        padding-left: 9%;
+	        width: 60px;
+	        height: 60px;
+	    }
 	}
-}

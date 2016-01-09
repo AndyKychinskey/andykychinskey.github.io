@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Заметки туриста: Обратная связь </title>
+    <link rel="shortcut icon" href="/JS prodj/siteV5/img/palm.png" type="img/png">
+    <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/myStyle.css" />
+    <script src="js/form.js"></script>
+</head>
+
+<body>
+
+    <div id="formContainer">
+        <p class="border"> Форма связи:</p>
+        <form id="myForm">
+            <table width="60%" border="1" align="center" bgcolor="#FFEFD5" cellspacing="7" cellpadding="7" frame="none" rules="rows">
+                <tr>
+                    <td> Пользователь: </td>
+                    <td>
+                        <input id="userName" class="myForm" type="text" name="userName" size="20" maxlength="50" value="Имя пользователя"> </td>
+                </tr>
+                <tr>
+                    <td> Почтовый ящик: </td>
+                    <td>
+                        <input id="userEmail" class="myForm" type="text" name="userMail" size="20" maxlength="50" value="Email пользователя"> </td>
+                </tr>
+                <tr>
+                    <td> Ваш вопрос: </td>
+                    <td>
+                        <textarea id="userText" class="myForm" cols="40" rows="5" wrap="virtual"> </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Вложить материалы: </td>
+                    <td>
+                        <input class="myForm" type="file" name="load" size="50"> </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <a href="index.html" title="Contact us!">
+                            <button class="form" name="cancel" type="button"> <span> Отмена </span>
+                            </button>
+                        </a>
+                    </td>
+                    <td align="right">
+                        <button class="form" name="submit" type="button">
+                           <figure class="figure"> <img src="img/content/icons/dove.png" alt="Dove" width="30px" height="30px">
+                            </figure>
+                            <p id="sendLetter"> Отправить! </p>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <p class="border"> Благодарим Вас!</p>
+    </div>
+</body>
+
+</html>
