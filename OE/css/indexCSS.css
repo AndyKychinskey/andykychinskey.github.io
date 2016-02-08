@@ -1,0 +1,166 @@
+body {
+	background: #D3D3D3;
+}
+.forAlign {
+  padding: 0;
+}
+.OEheader {
+	position: relative;
+}
+.OEheader img {
+	width: 100%;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.OEheader:nth-child(1) p:nth-child(1) {
+	position: absolute;
+	top: -2%;
+	left: 25%;
+	font-size: 60pt;
+	color: #FFFFE0;
+	font-style: italic;
+}
+.OEheader:nth-child(1) p:nth-last-child(2) {
+	position: absolute;
+	bottom: 10%;
+	left: 28%;
+	font-size: 20pt;
+	color: #FFFFE0;
+}
+.OEheader:nth-child(1) button {
+	position: absolute;
+	bottom: 1%;
+	right: 10%;
+}
+
+/* CSS for 1-5 rows */
+
+#firstRow div {
+	background: #777777;
+}
+#firstRow div h3 {
+	text-align: center;
+}
+#secondRow {
+	padding-bottom: 5px;
+}
+/*
+#secondRow h3 {
+	text-align: center;
+	background: #E9967A;
+}
+*/
+#secondRow ul {
+	border-bottom: none;
+}
+#secondRow ul li a {
+	border: none;
+}
+#secondRow li a {
+	/* Названия альбомов */
+	color: black;
+}
+#secondRow .table th, #secondRow .table-condensed th, .tab-content h5 {
+	font-size: 12pt;
+}
+
+.tab-content > div > div:first-child {
+	/*Белый цвет поля вокруг изображения альбома*/
+	background: white;
+	border-radius: 5px;
+	border-top-left-radius: 0;
+}
+.tab-content > div > div:nth-child(2) {
+	/*Белый цвет поля вокруг изображения альбома*/
+	background: white;
+	margin-left: 5px;
+	border-radius: 5px;
+}
+.table-condensed tbody tr td:first-child {
+	/*Рядку нумерации песен задаем серый цвет*/
+	color: #A9A9A9;
+}
+
+#thirdRow div {
+	background: #D86C7E;
+}
+#thirdRow div h3 {
+	text-align: center;
+}
+#thirdRow footer {
+	color: white;
+}
+#fourthRow div:nth-child(1), #fourthRow div:nth-child(3){
+	background: white;
+	padding-left: 0;
+}
+#fourthRow div:nth-child(2) {
+	background: #D3D3D3;
+	padding-left: 0;
+}
+#fifthRow div:nth-child(1){
+	background: white;
+	padding-left: 0;
+}
+#fifthRow div:nth-child(2) {
+	background: #D3D3D3;
+	padding-left: 0;
+}
+#sixthRow div {
+	background: #777777;
+	/* Отступ для плотного совмещения блока альбомов и блока афиши*/
+	margin-top: -5px;
+	padding-top: 35px;
+	padding-bottom: 45px;
+}
+#sixthRow div h3 {
+	text-align: center;
+}
+#seventhRow table tr td:nth-last-child(1),
+#seventhRow table tr td:nth-last-child(2),
+#seventhRow table tr td:nth-last-child(3) {
+	vertical-align: middle;
+}
+#eighthRow {
+	vertical-align: middle;
+	padding-top: 35px;
+	padding-bottom: 45px;
+	background: #777777;
+	color: white;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  width: 100%;
+  margin-bottom: 0;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  background-color: #A9A9A9;
+}
+
+.carousel p {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* Для красивого положения участника группы в карусели*/
+.bandMemberInfo {
+	margin-right: 20px;
+}
+
+.item .row > div:first-child{
+	border-right: solid 2px #E6E6FA;
+}
+
+.item .row > div:nth-child(2){
+	padding-left: 10px;
+	text-align: justify;
+}
