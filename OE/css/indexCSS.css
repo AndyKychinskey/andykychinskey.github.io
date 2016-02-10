@@ -153,9 +153,8 @@ body {
 
 /* Для красивого положения участника группы в карусели*/
 .bandMemberInfo {
-	margin-right: 20px;
+	margin-right: 40px;
 }
-
 .item .row > div:first-child{
 	border-right: solid 2px #E6E6FA;
 }
@@ -163,4 +162,21 @@ body {
 .item .row > div:nth-child(2){
 	padding-left: 10px;
 	text-align: justify;
+}
+
+/* Стили для описания кнопки при наименьшей ширине экрана */
+.buttonSmall {
+	margin-left: 0;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+@media(max-width: 455px){
+	#menuContainer {
+		display: none;
+	}
+	#firstRow p {
+		font-size: 11pt;
+		color: white;
+	}
 }
