@@ -1,0 +1,91 @@
+<doctype html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title> Persons list </title>
+        <!--[if lt IE 9]<script src="htpp://html5shim.googlecode.com/svn/trunk/html5.js"> </script> <![end if]-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="panel panel-default">
+            <!-- panel start-->
+            <div class="panel-heading">
+                <!-- panel head-->
+                <h3 class="alignToMiddle">Persons from database</h3>
+            </div>
+            <!-- panel head end-->
+            <div class="panel-body">
+                <!-- panel body start-->
+                <button id="viewAll" class="btn btn-default"> View all </button>
+                <button id="addPerson" class="btn btn-default"> Add </button>
+                <span> <b> Find persons: </b> </span>
+                <input type="text" id="find">
+                <button id="findPerson" class="btn btn-default"> Find </button>
+                <span> <b> Sort by: </b> </span>
+                <select size="1" id="menu">
+                  <option value="default">Default</option>
+                  <option value="name">Name</option>
+                  <option value="age">Age</option>
+                  <option value="occupation">Occupation</option>
+                  <option value="operationalExperience">Operational experience</option>
+                  <option value="salary">Salary</option>
+                </select>
+                <button id="sort" class="btn btn-default"> Sort </button>
+
+                <button id="editPerson" class="btn btn-default"> Edit </button>
+                <button id="deletePerson" class="btn btn-default"> Delete </button>
+
+                <!-- This tag <section></section> include table with persons data -->
+                <section>
+                    <table id="personsInfo" class="table table-striped myTable">
+                        <tr>
+                            <th class="alignToMiddle">ID</th>
+                            <th class="alignToLeft">Name</th>
+                            <th class="alignToMiddle">Age (years)</th>
+                            <th class="alignToLeft">Occupation</th>
+                            <th class="alignToMiddle">Operational experience (years)</th>
+                            <th class="alignToMiddle">Salary ($)</th>
+                        </tr>
+                    </table>
+                </section>
+
+
+                <div id="wrap">
+                    <div id="popUp">
+                        <h4 class="alignToMiddle"> <b> Person info </b> </h4>
+                        <h4> Name: </h4>
+                        <input type="text" id="name" class="form-control">
+                        <h4> Age (years): </h4>
+                        <input type="text" id="age" class="form-control">
+                        <h4> Occupation: </h4>
+                        <input type="text" id="occupation" class="form-control">
+                        <h4>Operational experience (years):</h4>
+                        <input type="text" id="operationalExperience" class="form-control">
+                        <h4>Salary ($):</h4>
+                        <input type="text" id="salary" class="form-control">
+                        <br>
+                        <button id="cancel" class="btn btn-default"> Cancel </button>
+                        <button id="OK" class="btn btn-default"> OK </button>
+                    </div>
+                </div>
+            </div>
+            <!-- panel body end-->
+            <div class="panel-footer">
+                <!-- panel footer start-->
+                <h5> Footer is place for some additional info</h5>
+            </div>
+            <!-- panel footer  end-->
+        </div>
+        <!-- panel end -->
+
+
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js">
+        </script>
+    </body>
+
+    </html>
