@@ -1,0 +1,108 @@
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+#mainContainer {
+	position: relative;
+	/*border: solid 2px #E07FE0;*/
+	width: 70%;
+	left: 15%;
+	top: 10%;
+	overflow: hidden;
+	padding-bottom: 100px;
+	z-index: 10;
+}
+#questions li {
+	display: inline-block;
+}
+.hideElement {
+	transition: opacity 2s;
+	opacity: 0;
+}
+.emptyElement {
+
+}
+.showElement {
+	transition: opacity 2s;
+	/*opacity: 1;*/
+	display: block;
+}
+/*
+#results {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	overflow: auto;
+	background: yellow;
+}*/
+#questions, #results {
+	position: absolute;
+	width: 100%;
+	background-color: white;
+	opacity: 1;
+	border-radius: 10px;
+	padding: 15px 10px 15px 10px;
+	transition: right 1.5s;
+}
+#questions ul {
+	margin: 0;
+}
+.showQuestions{
+	right: 0;
+}
+.hideQuestions {
+	right: -200%;
+}
+.classBlock {
+	display: block;
+}
+.classNone {
+	display: none;
+	opacity: 1;
+}
+.ownButton {
+	position: relative;
+	width: 33.3%;
+	padding: 10px 10px 10px 10px;
+	background-color: #E0A575;
+	color: #A12C1F;
+	text-align: center;
+	font-style: italic;
+	font-size: 16pt;
+	/*border-radius: 10px;*/
+	cursor: pointer;
+}
+.ownButton:hover {
+	background-color: #E08439;
+}
+/* startPage*/
+h2 {
+	color: #E08A34;
+}
+p, h3 {
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #A22D1F;
+}
+.linearGradientText {
+	font-size: 14pt;
+}
+.resultPosition {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+/*progress*/
+#progress {
+	position: absolute;
+	top: 0;
+	left: 32%;
+	width: 50%;
+}
