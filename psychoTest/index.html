@@ -30,7 +30,7 @@
           </div>
       </div>
 
-      <div id="questions" class="{{changeClass === 1 ? 'showQuestions' : 'hideQuestions'}} {{counter === 5 ? 'classNone' : 'emptyElement'}}">
+      <div id="questions" class="{{changeClass === 1 ? 'showQuestions' : 'hideQuestions'}} {{counter === 30 ? 'classNone' : 'emptyElement'}}">
           <ul ng-repeat="question in testQuestions" class="{{counter === $index ? 'showElement' : 'classNone'}}" id="ul{{$index}}">
             <li ng-repeat="item in question" ng-click="counterFunc($parent.$index, $index)" class="ownButton callout">{{item}}</li>
           </ul>
