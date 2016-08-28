@@ -352,6 +352,12 @@ var chessClock = {
                     }
                 }
                 return allSegmentCoords;
+            },
+            statusMessage: function () {
+				"use strict";
+                var height = chessClock.canvas.height(),
+                    messageCoords = [ 0.5840 * height, 0.2 * height ];
+                return messageCoords;
             }
         }
     },
@@ -435,6 +441,9 @@ var chessClock = {
             rect(coords.ctrlLeftPanelAxis(), "#82B2FF", "fill");
             rect(coords.ctrlRightPanelAxis(), "#F3FF87", "fill");
 
+           //Show message
+            chessClock.draw.showMessage("Press 'Space' to control timers, please!");
+
            //Digits on the left panel
             rect(coords.placeForDigit_1(), "#FFDCFD", "fill");
             rect(coords.placeForDigit_2(), "#FFDCFD", "fill");
@@ -476,6 +485,14 @@ var chessClock = {
             for (i = 0, k = numWhichDisplay.length; i < k; i = i + 1) {
                 chessClock.draw.drawNumber(coords[i], numWhichDisplay[i]);
             }
+        },
+        showMessage: function (message) {
+			"use strict";
+            var coords = chessClock.canvas.coords.statusMessage(),
+                ctx = chessClock.canvas.ctx();
+            ctx.font = "bold 14px sans-serif";
+            ctx.fillStyle = "#FF803C";
+            ctx.fillText(message, coords[0], coords[1]);
         }
     },
     something: 1
